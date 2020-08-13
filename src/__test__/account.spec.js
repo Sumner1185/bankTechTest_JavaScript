@@ -11,8 +11,16 @@ describe('Account', function () {
 
   test('Should allow a user to add money to their account', function () {
     let account = new Account();
-    account.add(1000)
+    account.add(1000);
 
     expect(account.balance).toEqual(1000)
+  });
+
+  test('Should allow a user to withdraw money from their account', function () {
+    let account = new Account();
+    account.add(1000);
+    account.withdraw(500);
+
+    expect(account.balance).toEqual(500);
   });
 });
