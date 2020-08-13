@@ -5,11 +5,11 @@ class Account {
     this.balance = STARTING_BALANCE
   }
 
-  add = function (amount) {
+  add (amount) {
     this.balance += amount
   }
 
-  withdraw = function (amount) {
+  withdraw (amount) {
     this.balance -= amount
   }
 };
