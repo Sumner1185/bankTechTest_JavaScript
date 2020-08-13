@@ -8,6 +8,10 @@ class Account {
   add = function (amount) {
     this.balance += amount
   }
+
+  withdraw = function (amount) {
+    this.balance -= amount
+  }
 };
 
 module.exports = Account
