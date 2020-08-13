@@ -16,8 +16,11 @@
     "url": "https://github.com/Sumner1185/bankTechTest_JavaScript/issues"
   },
   "homepage": "https://github.com/Sumner1185/bankTechTest_JavaScript#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel": "^6.23.0"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "jest": "^26.4.0"
