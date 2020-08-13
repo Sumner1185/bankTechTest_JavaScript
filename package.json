@@ -1,0 +1,25 @@
+{
+  "name": "banktechtest_javascript",
+  "version": "1.0.0",
+  "description": "Makers Bank Tech Test in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumner1185/bankTechTest_JavaScript.git"
+  },
+  "author": "Alastair Sumner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sumner1185/bankTechTest_JavaScript/issues"
+  },
+  "homepage": "https://github.com/Sumner1185/bankTechTest_JavaScript#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "jest": "^26.4.0"
+  }
+}
