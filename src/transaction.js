@@ -1,6 +1,8 @@
 class Transaction {
-  constructor ({ credit = null}) {
-    this.credit = credit
+  constructor ({ credit = null, debit = null, balance = null}) {
+    this.credit = credit,
+    this.debit = debit,
+    this.balance = balance
   }
 }
 
