@@ -26,6 +26,12 @@ class Account {
     return this.addMessage(amount, 'withdrawn');
   }
 
+  statement () {
+    this.printer.printStatement(this.transactionLog, (transaction) => {
+      return transaction.showStatement();
+    });
+  };
+
   addTransaction (transObj) {
     this.transactionLog.unshift(new this.transactionClass(transObj))
   }

@@ -1,4 +1,4 @@
-const Account = require('../account.js')
+const Account = require('../account.js');
 
 describe('Account', () => {
   let account;
