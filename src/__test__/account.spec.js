@@ -24,9 +24,11 @@ describe('Account', () => {
     expect(account.balance).toEqual(500);
   });
 
-  // test('Should return a message with amount deposited and remaining balance', () => {
-  //   expect(account.add(1000)).toEqual(
-  //     "1000.00"
-  //   )
-  // });
+  test('Should return a message with amount deposited and remaining balance', () => {
+    account.add(200)
+
+    expect(account.add(800)).toEqual(
+      "800.00 deposited. Current balance: 1000.00"
+    )
+  });
 });

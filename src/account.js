@@ -13,6 +13,7 @@ class Account {
 
   add (amount) {
     this.balance += amount
+    return `${amount} deposited. Current balance: ${this.balance}`
   }
 
   withdraw (amount) {
