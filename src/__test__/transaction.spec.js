@@ -22,9 +22,10 @@ describe('Transaction', () => {
   });
 
     describe('showStatement', () => {
+      const mockedDate = new Date(2020, 7, 12);
+      const realDateNow = Date.now.bind(global.Date);
+      
       beforeAll(() => {
-        const mockedDate = new Date(2020, 7, 12);
-        const realDateNow = Date.now.bind(global.Date);
         global.Date = jest.fn(() => mockedDate)
       })
 
