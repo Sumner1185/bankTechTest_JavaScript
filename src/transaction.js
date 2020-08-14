@@ -1,27 +1,23 @@
 const moment = require('moment')
+const Format = require('./format')
 
 class Transaction {
-  constructor ({ credit = null, debit = null, balance = null}) {
+  constructor ({ credit = null, debit = null, balance = null}, formatClass = new Format()) {
     this.credit = credit,
     this.debit = debit,
     this.balance = balance
     this.date = new Date()
+    this.formatClass = formatClass;
   };
 
   showStatement() {
     return [
-      this._formatDate(),
-      this._formatCurrency(this.credit),
-      this._formatCurrency(this.debit),
-      this._formatCurrency(this.balance)
+      this.formatClass.date(this.date),
+      this.formatClass.currency(this.credit),
+      this.formatClass.currency(this.debit),
+      this.formatClass.currency(this.balance)
     ].join("|| ");
   }
-
-  _formatDate = () => moment(this.date).format("DD/MM/YYYY ");
-
-  _formatCurrency = (item) => item != null ? `${this._formatDecimals(item)} ` : ""
-
-  _formatDecimals = (value) => parseFloat(value).toFixed(2)
 };
 
 module.exports = Transaction;
