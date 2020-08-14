@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Sumner1185/bankTechTest_JavaScript#readme",
   "dependencies": {
     "babel": "^6.23.0",
+    "mockdate": "^3.0.2",
     "moment": "^2.27.0",
     "sinon": "^9.0.3"
   },
