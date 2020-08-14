@@ -1,5 +1,3 @@
-const sinon = require('sinon')
-const MockDate = require('mockdate')
 const Transaction = require('../transaction.js');
 
 describe('Transaction', () => {
