@@ -50,7 +50,12 @@ describe('Account', () => {
 
   test('Should add a transaction object to the transactionLog', () => {
     account.add(500);
+    account.withdraw(100);
 
-    expect(account.transactionLog.length).toEqual(1);
+    expect(account.transactionLog.length).toEqual(2);
+    expect(account.transactionLog[1].credit).toEqual(500);
+    expect(account.transactionLog[1].balance).toEqual(500);
+    expect(account.transactionLog[0].debit).toEqual(100);
+    expect(account.transactionLog[0].balance).toEqual(400);
   });
 });

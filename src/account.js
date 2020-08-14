@@ -22,8 +22,8 @@ class Account {
   withdraw (amount) {
     if (amount > this.balance) return "Insufficient funds";
     this.balance -= amount
+    this.transactionLog.unshift(new this.transactionClass({ debit: amount, balance: this.balance }))
     return `${this.formatClass.currency(amount)}withdrawn. Current balance: ${this.formatClass.currency(this.balance)}`
-
   }
 };
 
