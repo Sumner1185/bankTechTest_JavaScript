@@ -16,18 +16,25 @@ class Account {
   add (amount) {
     this.balance += amount
     this.addTransaction({ credit: amount, balance: this.balance });
-    return `${this.formatClass.currency(amount)}deposited. Current balance: ${this.formatClass.currency(this.balance)}`
+    return this.addMessage(amount, 'deposited');
   }
 
   withdraw (amount) {
     if (amount > this.balance) return "Insufficient funds";
     this.balance -= amount
     this.addTransaction({ debit: amount, balance: this.balance });
-    return `${this.formatClass.currency(amount)}withdrawn. Current balance: ${this.formatClass.currency(this.balance)}`
+    return this.addMessage(amount, 'withdrawn');
   }
 
   addTransaction (transObj) {
     this.transactionLog.unshift(new this.transactionClass(transObj))
+  }
+
+  addMessage (amount, message) {
+    let currency = this.formatClass.currency(amount)
+    let balance = this.formatClass.currency(this.balance)
+
+    return `${currency}${message}. Current balance: ${balance}`
   }
 };
 
