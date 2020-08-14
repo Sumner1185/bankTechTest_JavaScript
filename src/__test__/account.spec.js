@@ -31,4 +31,12 @@ describe('Account', () => {
       "800.00 deposited. Current balance: 1000.00 "
     )
   });
+
+  test('Should return a message with amount withdrawn and remaining balance', () => {
+    account.add(1000)
+
+    expect(account.withdraw(500)).toEqual(
+      "500.00 withdrawn. Current balance: 500.00 "
+    )
+  });
 });

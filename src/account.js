@@ -20,6 +20,8 @@ class Account {
 
   withdraw (amount) {
     this.balance -= amount
+    return `${this.formatClass.currency(amount)}withdrawn. Current balance: ${this.formatClass.currency(this.balance)}`
+
   }
 };
 
