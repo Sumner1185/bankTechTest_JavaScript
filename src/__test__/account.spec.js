@@ -33,10 +33,18 @@ describe('Account', () => {
   });
 
   test('Should return a message with amount withdrawn and remaining balance', () => {
-    account.add(1000)
+    account.add(1000);
 
     expect(account.withdraw(500)).toEqual(
       "500.00 withdrawn. Current balance: 500.00 "
     )
+  });
+
+  test('Should return message if user tries to withdraw more than they have', () => {
+    account.add(500);
+
+    expect(account.withdraw(1000)).toEqual(
+      "Insufficient funds"
+    );
   });
 });

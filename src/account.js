@@ -19,6 +19,7 @@ class Account {
   }
 
   withdraw (amount) {
+    if (amount > this.balance) return "Insufficient funds";
     this.balance -= amount
     return `${this.formatClass.currency(amount)}withdrawn. Current balance: ${this.formatClass.currency(this.balance)}`
 
