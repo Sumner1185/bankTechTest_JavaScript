@@ -15,6 +15,7 @@ class Account {
 
   add (amount) {
     this.balance += amount
+    this.transactionLog.unshift(new this.transactionClass({ credit: amount, balance: this.balance }))
     return `${this.formatClass.currency(amount)}deposited. Current balance: ${this.formatClass.currency(this.balance)}`
   }
 

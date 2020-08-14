@@ -47,4 +47,10 @@ describe('Account', () => {
       "Insufficient funds"
     );
   });
+
+  test('Should add a transaction object to the transactionLog', () => {
+    account.add(500);
+
+    expect(account.transactionLog.length).toEqual(1);
+  });
 });
