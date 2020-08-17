@@ -81,12 +81,16 @@ Below is an example of what would be shown on the screen:
 
 ## Dependencies
 
-Production:
+**Production:**
+<br>
 **[Moment]** - Time formatting library.
 
-Development:
+**Development:**
+<br>
 **[MockDate]** - A JavaScript mockdate object used to change when "now" is for testing purposes.
+<br>
 **[Jest]** - JavaScript testing framework.
+<br>
 **[Sinon]** - Standalone spies, stubs and mocks for JavaScript.
 
 <!-- dependency links -->
