@@ -11,6 +11,7 @@ The application allows you to create an account, deposit funds into it, withdraw
  [![specification](https://img.shields.io/badge/-Specification-blue)](#specification)
  [![Quick_Start](https://img.shields.io/badge/-Quick%20Start-blue)](#quick_start)
  [![Screen_Preview](https://img.shields.io/badge/-Screen%20Preview-blue)](#screen_preview)
+ [![Dependencies](https://img.shields.io/badge/-Dependencies-blue)](#dependencies)
   
 </div>
 
@@ -73,8 +74,26 @@ Below is an example of what would be shown on the screen:
 
 ## Screen Preview
 
+<p align="center">
+ <img src=images/screen_preview.png width=40%>
+</p><br><br>
 
 
+## Dependencies
+
+Production:
+**[Moment]** - Time formatting library.
+
+Development:
+**[MockDate]** - A JavaScript mockdate object used to change when "now" is for testing purposes.
+**[Jest]** - JavaScript testing framework.
+**[Sinon]** - Standalone spies, stubs and mocks for JavaScript.
+
+<!-- dependency links -->
+[Moment]: https://momentjs.com/
+[MockDate]: https://www.npmjs.com/package/mockdate
+[Jest]: https://jestjs.io/
+[Sinon]: https://sinonjs.org/
 
 <!-- project link -->
 [available here]: https://github.com/Sumner1185/BankTechTest
