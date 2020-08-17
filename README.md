@@ -9,6 +9,8 @@ The application allows you to create an account, deposit funds into it, withdraw
  ### Navigate to:
   
  [![specification](https://img.shields.io/badge/-Specification-blue)](#specification)
+ [![Quick Start](https://img.shields.io/badge/-Quick%20Start-blue)](#quick start)
+ [![Screen Preview](https://img.shields.io/badge/-Screen%20Preview-blue)](#screen preview)
   
 </div>
 
@@ -35,6 +37,44 @@ date || credit || debit || balance
 13/08/2020 || 2000.00 || || 3000.00 
 10/08/2020 || 1000.00 || || 1000.00
 ```
+
+## Quick Start
+
+1. Clone this repo
+2. Install dependencies with:
+```
+$ npm install
+```
+3. Run tests with:
+```
+$ npm test
+```
+4. Run the Node REPL:
+```
+$ node
+```
+5. Require in `account.js` with:
+```
+> const Account = require('./src/account.js')
+```
+6. Create new account with:
+```
+> let bankAccount = new Account();
+```
+7. Use the account with the following functions:
+
+| **Function** | **Description** |
+|--------------|-----------------|
+| bankAccount.add(amount); | Deposit any value you choose into the account as the amount parameter |
+| bankAccount.withdraw(amount); | Withdraw any value you choose from the account as the amount parameter. Although account must have at least that balance or 'Insuffient funds" will be shown |
+| bankAccount.statement(); | Will print statement to teh screen showing transaction history including dates, amounts and balance after each transaction |
+
+Below is an example of what would be shown on the screen:
+
+## Screen Preview
+
+
+
 
 <!-- project link -->
 [available here]: https://github.com/Sumner1185/BankTechTest
