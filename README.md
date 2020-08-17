@@ -9,8 +9,8 @@ The application allows you to create an account, deposit funds into it, withdraw
  ### Navigate to:
   
  [![specification](https://img.shields.io/badge/-Specification-blue)](#specification)
- [![Quick_Start](https://img.shields.io/badge/-Quick%20Start-blue)](#quick_start)
- [![Screen_Preview](https://img.shields.io/badge/-Screen%20Preview-blue)](#screen_preview)
+ [![Quick-Start](https://img.shields.io/badge/-Quick%20Start-blue)](#quick-start)
+ [![Screen-Preview](https://img.shields.io/badge/-Screen%20Preview-blue)](#screen-preview)
  [![Dependencies](https://img.shields.io/badge/-Dependencies-blue)](#dependencies)
   
 </div>
