@@ -40,7 +40,7 @@ class Account {
     let currency = this.formatClass.currency(amount)
     let balance = this.formatClass.currency(this.balance)
 
-    return `${currency}${message}. Current balance: ${balance}`
+    return ` ${currency}${message}. Current balance: ${balance}`
   }
 };
 

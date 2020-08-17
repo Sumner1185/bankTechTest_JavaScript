@@ -28,7 +28,7 @@ describe('Account', () => {
     account.add(200)
 
     expect(account.add(800)).toEqual(
-      "800.00 deposited. Current balance: 1000.00 "
+      " 800.00 deposited. Current balance: 1000.00 "
     )
   });
 
@@ -36,7 +36,7 @@ describe('Account', () => {
     account.add(1000);
 
     expect(account.withdraw(500)).toEqual(
-      "500.00 withdrawn. Current balance: 500.00 "
+      " 500.00 withdrawn. Current balance: 500.00 "
     )
   });
 
