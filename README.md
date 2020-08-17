@@ -10,7 +10,7 @@ The application allows you to create an account, deposit funds into it, withdraw
   
  [![specification](https://img.shields.io/badge/-Specification-blue)](#specification)
   
-<div>
+</div>
 
 ## Specification
 
